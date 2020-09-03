@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+    <head>
+        <link rel="stylesheet" type="text/css" href="cadastro.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <meta charset="utf-8">
+        <title> Tela de Cadastro </title>
+    </head>
+    <body class="body">
+        <div class="cadastro">
+            <h2>Cadastre-se para acessar o sistema</h2>
+                    <form name="gerenciando" method="POST" action="gerenciando.php">
+                       <div class="full-box spacing">
+                            <label for="name">Nome completo</label>
+                            <input type="text" name="name" id="name" placeholder="Insira seu nome completo" required> 
+                        </div>
+                       <div class="half-box spacing">
+                            <label for="CPF">CPF</label>
+                            <input type="text" name="CPF" id="cpf" placeholder="Insira seu CPF" required> 
+                        </div>
+                        <div class="half--box spacing">
+                            <label for="senha">Insira sua senha</label>
+                            <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required> 
+                        </div>
+                        <input type="submit" name="botao" id="botao" value="Cadastrar funcionario">
+                        <input type="button" name="botao" value="Voltar" onclick="history.go(-1)">
+                    </form>            
+        </div>
+        <p class="erro-autenticacao template"></p>
+        <script src="cadastro.js"></script>
+        
+    </body>
+
+
+
+
+</html>

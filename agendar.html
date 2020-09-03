@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+    <head>
+        <link rel="stylesheet" type="text/css" href="agendar.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <meta charset="utf-8">
+        <title> Tela de Cadastro de ficha </title>
+    </head>
+    <body class="body">
+        <div class="agendar">
+            <h2>Cadastrar ficha</h2>
+                    <form name="gerenciando" method="POST" action="gerenciando.php" id="register-form">
+                        <div class="full-box spacing">
+                            <label for="name">Nome completo</label>
+                            <input type="text" name="name" id="name" placeholder="Insira seu nome completo" data-max-length="40" required> 
+                        </div>
+                        <div class="full-box spacing" >
+                            <label for="CPF">CPF</label>
+                            <input type="text" name="CPF" id="cpf" placeholder="Ex: 000000000000" required> 
+                        </div>
+                        <div class="full-box spacing" >
+                            <label for="sus">Número do cartão do SUS</label >
+                            <input type="text" name="sus" id="sus" placeholder="Ex: 000000000000000" required> 
+                        </div>
+                        <div class="full-box spacing" >
+                            <label for="data"> Data da consulta</label>
+                            <input type="date" name="data" id="data" required> 
+                        </div>
+                        <div class="half--box spacing">
+                            <label for="data"> Prioridade</label>
+                            <select name="prioridade">
+                                <option> Não prioritário</option>
+                                <option> Prioridade comum</option>
+                                <option> Prioridade especial</option>
+                            </select>
+                        </div>
+                        <div class="half--box spacing">
+                            <label for="data"> Consulta com: </label>
+                            <select name="profissional">
+                                <option> Dentista(o)</option>
+                                <option> Médica(o)</option>
+                            </select>
+                        </div>
+                        <input type="submit" name="botao" id="botao" value="Cadastrar ficha">
+                        <input type="button" name="botao" value="Voltar" onclick="history.go(-1)">
+                    </form>            
+        </div>
+        <p class="erro-autenticacao template"></p>
+        <script src="cadastro.js"></script>
+        
+    </body>
+
+
+
+
+</html>

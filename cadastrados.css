@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa";
+    color: #323232;
+    border: none;
+}
+
+.body{
+    padding-top: 5vh;
+    background-image: url(img/aaaaa.jpg);
+    background-size: 1370px;
+    text-align: center;
+}
+
+input[type="button"]{
+    background-color: gray;
+    color: #000000;
+    border:none;
+    border-radius: 20px;
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.50;
+    
+}
+

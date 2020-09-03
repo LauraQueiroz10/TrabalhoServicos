@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif ;
+    color: #323232;
+    border: none;
+}
+
+input, label {
+    display: block;
+    width: 100%; 
+
+}
+
+input:focus , label:focus{
+    outline: none;
+}
+
+.body{
+    padding-top: 5vh;
+    background-image: url(img/aaaaa.jpg);
+    background-size: 100%;
+}
+.h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.agendar{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    border-radius: 10px;    
+    list-style: none;
+    padding: 25px;
+    
+}
+
+.h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+
+}
+.half-box{
+    flex: 1 1 45%;
+}
+.spacing {
+
+    margin-right: 5%;
+}
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+select {
+    border-bottom: 2px #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+input {
+    border-bottom: 2px #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+input[name="botao"]{
+    background-color: gray;
+    color: #000000;
+    border:none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.50;
+}
+input[name="botao"]:hover{
+    cursor: pointer;
+    background: rgb(61, 61, 61);
+    transition: 0.25;
+}
+.erro-autenticacao{
+    color: red;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+.template {
+    display: none;
+}
